@@ -45,7 +45,7 @@ cluster_labels = kmeans.labels_
 # Create a mapping from cluster label to the most frequent true label in that cluster
 cluster_to_sex_map = {}
 for i in range(n_clusters):
-    # Get the true labels for data points in the current cluster
+    # Get the true labels for data points in the current  
     labels_in_cluster = y_true[cluster_labels == i]
     # Find the most frequent label in this cluster
     most_frequent_label = labels_in_cluster.mode()[0]
